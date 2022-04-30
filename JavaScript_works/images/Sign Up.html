@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!-- saved from url=(0138)file:///Users/ashyr/Desktop/University/Lessons/Web%20Design/Practice/Workshops/Workshop%2020%20(JavaScript)-20210422/Materials/signup.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+    <title>Sign Up</title>
+    <meta name="description" content="Sign up with us.">
+    <meta name="keywords" content="HTML,signup">
+    <meta name="author" content="Sanchai Noichan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <h1>Sign Up</h1>
+    <form method="POST" action="http://dotandeye.com/signup.php">
+        <fieldset>
+            <legend>Login Info</legend>
+            <label for="username">Username</label>
+            <input id="username" name="username" type="text">
+            <br><br>
+            <label for="password">Password</label>
+            <input id="password" name="password" type="password">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Profile</legend>
+            <label for="firstname">First Name</label>
+            <input id="firstname" name="firstname" type="text">
+            <br><br>
+            <label for="lastname">Last Name</label>
+            <input id="lastname" name="lastname" type="text">
+            <br><br>
+            <label for="birthdate">Birthdate</label>
+            <input id="birthdate" name="birthdate" type="date">
+            <br><br>
+            <label>Gender</label>
+            <input id="male" name="gender" type="radio" value="m">
+            <label for="male">Male</label>
+            <input id="female" name="gender" type="radio" value="f">
+            <label for="female">Female</label>
+            <br><br>
+            <label for="avatar">Avatar</label>
+            <input id="avatar" name="avatar" type="file" accept="image/*">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Contact Info</legend>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="name@example.com">
+            <br><br>
+            <label for="phone">Phone</label>
+            <input id="phone" name="phone" type="text" placeholder="0812345678">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Academic</legend>
+            <label for="year">Year</label>
+            <select id="year" name="year">
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+            </select>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Interests</legend>
+            <input id="science" name="science" type="checkbox" value="science">
+            <label for="science">Science</label>
+            <br>
+            <input id="music" name="music" type="checkbox" value="music">
+            <label for="music">Music</label>
+            <br>
+            <input id="travel" name="travel" type="checkbox" value="travel">
+            <label for="travel">Travel</label>
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>Bio</legend>
+            <textarea name="bio" rows="5"></textarea>
+        </fieldset>
+        <br>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Submit">
+    </form>
+
+    <script src="file:///signup.js"></script>
+
+
+</body></html>

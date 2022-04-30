@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Are You Dumb?</title>
+        <style>
+            * {
+                margin: 0%;
+                padding: 0%;
+                box-sizing: border-box;
+            }
+
+            body {
+                background: linear-gradient(180deg, #7FFFD4 -30.08%, #3C88EE 100%);
+                font-weight: 400%;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                height: 100vh;
+                text-align: center;
+                position: relative;
+            }
+
+            #firstDiv {
+                background: linear-gradient(180deg, #3C88EE -30.08%, #7FFFD4 100%);
+                width: 60vh;
+                height: 30vh;
+                margin-top: 10%;
+                margin-left: 33%;
+                border-radius: 5%;
+                position: absolute;
+            }
+
+            h3 {
+                font-size: 35px;
+                color:antiquewhite;
+                margin: 10% 0 60px;
+            }
+
+
+            #btnYes {
+                font-size: 25px;
+                text-align: center;
+                font-family: monospace;
+                background: fixed;
+                color:darkcyan;
+                border:none;
+                width: 100px;
+                height: 30px;
+                top: 270px;
+                right: 630px;
+                padding-right: 15%;
+                position: absolute;
+            }
+
+            #button {
+                font-size: 25px;
+                font-family: monospace;
+                background: fixed;
+                color:darkcyan;
+                border:none;
+                width: 100px;
+                height: 30px;
+                top: 270px;
+                right: 450px;
+                padding-right: 15%;
+                position: fixed;
+            }
+        </style>
+    </head>
+    <body>
+    <div id="firstDiv">
+        <h3>Are you dumb?</h3>
+    </div>
+    <button type="button" id="btnYes" onclick="clickedYes()">Yes</button>
+    <button type="button" id="button" onclick="clickedNo()">No</button>
+    <script>
+        function clickedYes() {
+            document.getElementById("btnYes").textContent = "I knew it!";
+        }
+
+        function clickedNo() {
+            document.getElementById("button").addEventListener('click', function(){
+            document.getElementById("button").style.top = 150 + Math.round(Math.random()*300) + "px";
+            // console.log(Math.round(Math.random()*300))
+            document.getElementById("button").style.right = Math.round(Math.random()*500)+ "px";
+            document.getElementById("button").style.bottom = Math.round(Math.random()*300)+ "px";
+            document.getElementById("button").style.left = Math.round(Math.random()*500)+ "px";
+            });
+        }
+    </script>
+    </body>
+</html>
